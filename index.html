@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fátima Antonella Cruz Talavera</title>
+    <style>
+        /* --- Importación de Fuentes de Google --- */
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600&display=swap');
+
+        /* --- Variables de Color --- */
+        :root {
+            --color-principal-rojo: #9B2226; /* Un rojo vino profundo y elegante */
+            --color-fondo: #FFF8F0; /* Un blanco hueso muy sutil y cálido */
+            --color-texto: #333333; /* Un gris oscuro para mejor legibilidad */
+            --color-acento: #AE2012; /* Un rojo más brillante para enlaces */
+            --fuente-titular: 'Playfair Display', serif;
+            --fuente-cuerpo: 'Montserrat', sans-serif;
+        }
+
+        /* --- Estilos Generales --- */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--fuente-cuerpo);
+            background-color: var(--color-fondo);
+            color: var(--color-texto);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* --- Barra de Navegación --- */
+        header {
+            background-color: rgba(255, 248, 240, 0.85); /* Fondo semitransparente */
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-bottom: 1px solid #EAE0D5;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            text-align: center;
+        }
+
+        nav a {
+            color: var(--color-principal-rojo);
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: var(--color-acento);
+        }
+
+        /* --- Sección de Bienvenida (Nombre) --- */
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            min-height: 80vh;
+            padding: 40px 20px;
+        }
+
+        .hero h1 {
+            font-family: var(--fuente-titular);
+            font-size: 6rem; /* Tamaño super grande */
+            color: var(--color-principal-rojo);
+            margin: 0;
+            line-height: 1.1;
+        }
+
+        /* --- Estilo de las Secciones --- */
+        section {
+            padding: 80px 0;
+            border-bottom: 1px solid #EAE0D5;
+        }
+
+        section:last-of-type {
+            border-bottom: none;
+        }
+
+        h2 {
+            font-family: var(--fuente-titular);
+            font-size: 2.5rem;
+            color: var(--color-principal-rojo);
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        h3 {
+            font-family: var(--fuente-cuerpo);
+            font-weight: 600;
+            font-size: 1.5rem;
+            color: var(--color-principal-rojo);
+            margin-top: 40px;
+            border-bottom: 2px solid var(--color-acento);
+            padding-bottom: 10px;
+        }
+
+        p, li {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            text-align: justify;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        li {
+            padding: 8px 0;
+        }
+        
+        li::before {
+            content: '▪';
+            color: var(--color-acento);
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        /* --- Estilo de los Hipervínculos --- */
+        a {
+            color: var(--color-acento);
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            position: relative;
+            padding-bottom: 2px;
+        }
+
+        a:hover {
+            color: var(--color-principal-rojo);
+            background-image: linear-gradient(90deg, var(--color-acento), var(--color-principal-rojo));
+            background-repeat: no-repeat;
+            background-size: 100% 2px;
+            background-position: 0 100%;
+        }
+        
+        /* --- Responsividad para móviles --- */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 3.5rem;
+            }
+            nav a {
+                margin: 0 10px;
+                font-size: 14px;
+            }
+            h2 {
+                font-size: 2rem;
+            }
+            p, li {
+                font-size: 1rem;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="#sobre-mi">Sobre mí</a>
+            <a href="#mis-cursos">Mis Cursos</a>
+            <a href="#mis-amigos">Mis Amigos</a>
+            <a href="#donde-encontrarme">Dónde encontrarme</a>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <section class="hero">
+            <h1>Fátima Antonella<br>Cruz Talavera</h1>
+        </section>
+
+        <section id="sobre-mi">
+            <h2>Sobre mí</h2>
+            <p>
+                Soy estudiante de tercer semestre en la carrera de <a href="https://ucsp.edu.pe/carreras/administracion-negocios/" target="_blank">“Administración de Negocios”</a> en la <a href="https://ucsp.edu.pe/" target="_blank">“Universidad Católica San Pablo”</a>. Antes de comenzar la universidad, terminé en el colegio <a href="https://ssccaqp.edu.pe/nosotros/" target="_blank">“De Los Sagrados Corazones”</a> donde pude certificarme en francés con la <a href="https://alianzafrancesa.org.pe/arequipa/" target="_blank">“Alianza Francesa”</a> y en inglés con <a href="https://www.cambridgeenglish.org/es/exams-and-tests/qualifications/" target="_blank">“Cambridge”</a>. Cuando estaba en 5to de secundaria tuve la oportunidad de participar en <a href="https://www.facebook.com/ecudeartsscc" target="_blank">“ECUDEART”</a>, un encuentro de educación, cultura, deporte y arte organizado por la congregación de los colegios SSCC de Perú y Bolivia, como el <a href="https://www.facebook.com/colegiossccbelen" target="_blank">“Colegio de los Sagrados Corazones Belén”</a>; el <a href="https://www.facebook.com/profile.php?id=100063715792276" target="_blank">“Centro Educativo Parroquial Reina de la Paz”</a>, el <a href="https://www.facebook.com/colegiopadredamiansscc" target="_blank">“Colegio Padre Damián de los Sagrados Corazones”</a> y el <a href="https://www.facebook.com/profile.php?id=100063768843916" target="_blank">“Colegio de los Sagrados Corazones de Bolivia”</a>. Como representantes del Colegio de los Sagrados Corazones de Arequipa realizamos un <a href="https://www.facebook.com/watch/?v=1259648231349886" target="_blank">“video”</a> como presentación.
+            </p>
+            <p>
+                Lo que más me gusta de mi carrera son los cursos de la <a href="https://ucsp.edu.pe/wp-content/uploads/2023/07/ADN-Malla-Curricular-2023.pdf" target="_blank">“mención de finanzas”</a>, como microfinanzas o análisis de riesgos. Y estoy muy interesada en acceder a una beca por el <a href="https://ucsp.edu.pe/internacional/presentacion/" target="_blank">“programa internacional UCSP”</a>. Algo que me ayudó mucho a decidir la universidad y la carrera fueron los consejos de <a href="https://www.linkedin.com/in/manuel-albino-cruz-ortega" target="_blank">Manuel Cruz</a>, es una de las personas que más admiro y respeto, su fuerza de voluntad, decisión, disciplina y entrega hacen que sea mi modelo a seguir.
+            </p>
+        </section>
+
+        <section id="mis-cursos">
+            <h2>Mis Cursos</h2>
+            
+            <h3>Actuales:</h3>
+            <ul>
+                <li>Análisis Financiero: <a href="https://www.linkedin.com/in/mar%C3%ADa-bel%C3%A9n-bocchio-linares-96846035" target="_blank">Profesora Maria Bocchio</a></li>
+                <li>Cálculo en una variable</li>
+                <li>Comportamiento del consumidor: <a href="https://www.linkedin.com/in/fabiola-postigo-99996b3b" target="_blank">Profesora Fabiola Postigo</a></li>
+                <li>Filosofía de la Naturaleza: <a href="https://www.linkedin.com/in/isabelmoralesb" target="_blank">Profesora Isabel Morales</a></li>
+                <li>Historia del Occidente: <a href="https://www.linkedin.com/in/amparo-isela-chalco-ch%C3%A1vez-8185512aa/" target="_blank">Profesora Amparo Chalco</a></li>
+                <li>Introducción de Ciencia de la Computación: <a href="https://www.linkedin.com/in/ecuadrosv/" target="_blank">Profesor Ernesto Cuadros</a> y Asistente de Cátedra <a href="https://josuemontenegro.com" target="_blank">Josué Montenegro</a></li>
+                <li>Liderazgo: <a href="https://pe.linkedin.com/in/pablo-nu%C3%B1ez-saija-08b892174" target="_blank">Profesor Pablo Nuñez</a></li>
+            </ul>
+
+            <h3>Favoritos de semestres pasados:</h3>
+            <ul>
+                <li>Economía General: <a href="https://www.linkedin.com/in/karlolam" target="_blank">Profesor Karlo Lam Obregon</a></li>
+                <li>Fundamentos de Marketing: Con la Miss <a href="https://www.linkedin.com/in/ana-elizabeth-g%C3%B3mez-burns-4502263b" target="_blank">Ana Gomez Burns</a></li>
+                <li>Fundamentos de Administración: Profesor Angel Ramos</li>
+                <li>Contabilidad: <a href="https://www.linkedin.com/in/h%C3%A9ctor-manuel-castro-salinas-467008149" target="_blank">Profesor Hector Castro Salinas</a></li>
+            </ul>
+        </section>
+
+        <section id="mis-amigos">
+            <h2>Mis Amigos de la U</h2>
+            <ul>
+                <li><a href="https://greciameza.github.io/Grecia-Meza-page/" target="_blank">Grecia Meza Caballero</a></li>
+                <li><a href="https://lindsay051206.github.io/Lindsay-Alanna-Perochena-Obreg-n/" target="_blank">Lindsay Perochena Obregon</a></li>
+                <li><a href="https://alejandragarcia10.github.io/Alejandra-Garc-a-Apaza/" target="_blank">Alejandra García</a></li>
+                <li><a href="https://vaniabusta10.github.io" target="_blank">Vania Bustamante</a></li>
+                <li><a href="https://www.linkedin.com/in/samanthajohnsonnunez/" target="_blank">Samantha Johnson Nuñez</a></li>
+                <li><a href="https://www.linkedin.com/in/antonio-jago-arana-barbachan-9471922ba/" target="_blank">Antonio Arana Barbachan</a></li>
+            </ul>
+        </section>
+
+        <section id="donde-encontrarme">
+            <h2>Dónde encontrarme</h2>
+            <ul>
+                <li><a href="https://github.com/Fatima2228" target="_blank">Github</a></li>
+                <li><a href="https://www.linkedin.com/in/f%C3%A1tima-antonella-cruz-talavera-b7535b30b" target="_blank">Linkedin</a></li>
+                <li>Correo electrónico: <a href="mailto:fatima.cruz@ucsp.edu.pe">fatima.cruz@ucsp.edu.pe</a></li>
+            </ul>
+        </section>
+
+    </main>
+
+</body>
+</html>
